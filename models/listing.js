@@ -3,6 +3,7 @@ const Schema = mongoose.Schema;
 const Review = require("./review.js");
 const User = require("./user.js");
 const { string } = require("joi");
+const { required } = require("joi");
 
 const listingSchema = new Schema({
   title: {

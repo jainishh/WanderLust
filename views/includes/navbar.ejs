@@ -31,6 +31,9 @@
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -44,9 +47,12 @@
           <input
             class="form-control me-2 search-input"
             type="search"
+            name="search"
             placeholder="Search Destination"
+            value="<%= typeof search !== 'undefined' ? search : '' %>"
+            aria-label="Search"
           />
-          <button class="btn search-btn" type="submit">
+          <button class="btn search-btn searchBar" type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>Search
           </button>
         </form>

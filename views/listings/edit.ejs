@@ -1,7 +1,7 @@
 <% layout("layouts/boilerplate") %>
 
 <div class="row mt-3">
-  <div class="col-8 offset-2">
+  <div class="col-md-8 col-10 offset-md-2 offset-1"">
     <br />
 
     <h3>Edit Your Listing</h3>
@@ -46,6 +46,29 @@
       <div class="mb-3">
         <lable for="image" class="form-label"> Upload New Image Link</lable>
         <input type="file" name="listing[image]" class="form-control" />
+      </div>
+
+      <div class="mb-3">
+        <label for="category" class="form-label">Category</label>
+        <select
+          class="form-control"
+          id="category"
+          name="listing[category]"
+          required
+        >
+          <option value="">Select a category</option>
+          <option value="Trending">Trending</option>
+          <option value="Rooms">Rooms</option>
+          <option value="Iconic_Cities">Iconic Cities</option>
+          <option value="Mountains">Mountains</option>
+          <option value="Castles">Castles</option>
+          <option value="Amazing_Pool">Amazing Pool</option>
+          <option value="Camping">Camping</option>
+          <option value="Farms">Farms</option>
+          <option value="Arctic">Arctic</option>
+          <option value="Domes">Domes</option>
+          <option value="House_Boats">House Boats</option>
+        </select>
       </div>
 
       <div class="row">
